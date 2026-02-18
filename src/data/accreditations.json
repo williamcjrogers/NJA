@@ -1,0 +1,93 @@
+[
+  {
+    "id": "cscs",
+    "name": "CSCS",
+    "fullName": "Construction Skills Certification Scheme",
+    "category": "staff-qualifications",
+    "description": "All operatives hold valid CSCS cards, demonstrating competence and health & safety awareness for working on construction and infrastructure sites."
+  },
+  {
+    "id": "smsts",
+    "name": "SMSTS",
+    "fullName": "Site Management Safety Training Scheme",
+    "category": "staff-qualifications",
+    "description": "Site managers qualified under the CITB SMSTS programme, ensuring competent safety leadership on every project."
+  },
+  {
+    "id": "sssts",
+    "name": "SSSTS",
+    "fullName": "Site Supervisor Safety Training Scheme",
+    "category": "staff-qualifications",
+    "description": "Site supervisors trained under the CITB SSSTS programme, maintaining operational safety standards across all works."
+  },
+  {
+    "id": "first-aid",
+    "name": "First Aid at Work",
+    "fullName": "First Aid at Work Certification",
+    "category": "staff-qualifications",
+    "description": "Qualified first aiders across all operational teams, ensuring immediate response capability on every site."
+  },
+  {
+    "id": "chainsaw",
+    "name": "Chainsaw & Tree Work",
+    "fullName": "NPTC Chainsaw & Tree Work Certifications",
+    "category": "staff-qualifications",
+    "description": "NPTC-certified chainsaw operatives qualified in felling, cross-cutting, and aerial tree work operations."
+  },
+  {
+    "id": "pa1-pa6",
+    "name": "PA1/PA6",
+    "fullName": "Pesticide Application Certificates",
+    "category": "staff-qualifications",
+    "description": "PA1 (foundation) and PA6 (handheld applicators) certified operatives for professional herbicide application in vegetation management programmes."
+  },
+  {
+    "id": "nrswa",
+    "name": "NRSWA",
+    "fullName": "New Roads and Street Works Act",
+    "category": "staff-qualifications",
+    "description": "NRSWA-qualified operatives and supervisors for compliant traffic-managed works on the public highway."
+  },
+  {
+    "id": "water-safety",
+    "name": "Water Safety Level 2",
+    "fullName": "Working Safely in Water Level 2",
+    "category": "staff-qualifications",
+    "description": "Teams trained and equipped for safe working in and around watercourses, including appropriate PPE and rescue equipment."
+  },
+  {
+    "id": "plant-tickets",
+    "name": "Plant Tickets",
+    "fullName": "CPCS / NPORS Plant Operations",
+    "category": "staff-qualifications",
+    "description": "Certified plant operators for excavators, dumpers, and specialist machinery, enabling self-delivery of earthworks and site preparation."
+  },
+  {
+    "id": "chapter-8",
+    "name": "Chapter 8",
+    "fullName": "Chapter 8 Traffic Management",
+    "category": "operational",
+    "description": "Chapter 8-compliant vehicles, signage, and equipment for safe working on or adjacent to the highway network."
+  },
+  {
+    "id": "chas",
+    "name": "CHAS",
+    "fullName": "Contractors Health and Safety Assessment Scheme",
+    "category": "health-safety",
+    "description": "CHAS-accredited, demonstrating compliance with core health and safety criteria recognised by major public and private sector clients."
+  },
+  {
+    "id": "constructionline",
+    "name": "Constructionline",
+    "fullName": "Constructionline Registration",
+    "category": "supply-chain",
+    "description": "Registered on Constructionline, the UK government's pre-qualification service, streamlining procurement for public sector clients."
+  },
+  {
+    "id": "safe-contractor",
+    "name": "SafeContractor",
+    "fullName": "SafeContractor Accreditation",
+    "category": "health-safety",
+    "description": "SafeContractor accredited, providing assurance of health and safety competence to clients across all sectors."
+  }
+]

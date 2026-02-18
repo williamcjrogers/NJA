@@ -1,26 +1,329 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-brand-teal: #1A5C4F;
+  --color-brand-teal-light: #237A6A;
+  --color-brand-teal-dark: #134840;
+  --color-brand-charcoal: #2D2D2D;
+  --color-brand-charcoal-light: #444444;
+  --color-brand-amber: #D4872F;
+  --color-brand-amber-light: #E09A4A;
+  --color-brand-amber-dark: #B87225;
+  --color-brand-cream: #F7F5F0;
+  --color-brand-grey: #E8E6E1;
+  --color-brand-grey-dark: #C5C3BE;
+  --color-brand-white: #FFFFFF;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --text-fluid-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-fluid-sm: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  --text-fluid-base: clamp(1rem, 0.925rem + 0.375vw, 1.125rem);
+  --text-fluid-lg: clamp(1.125rem, 1rem + 0.625vw, 1.375rem);
+  --text-fluid-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.625rem);
+  --text-fluid-2xl: clamp(1.5rem, 1.25rem + 1.25vw, 2rem);
+  --text-fluid-3xl: clamp(1.875rem, 1.5rem + 1.875vw, 2.5rem);
+  --text-fluid-4xl: clamp(2rem, 1.5rem + 2.5vw, 3.2rem);
+  --text-fluid-5xl: clamp(2.5rem, 1.75rem + 3.75vw, 4rem);
+  --text-fluid-6xl: clamp(3rem, 2rem + 5vw, 5rem);
+  --text-fluid-7xl: clamp(3.5rem, 2.25rem + 6.25vw, 6rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ========== BASE STYLES ========== */
+
+body {
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-charcoal);
+  font-family: var(--font-sans);
+  font-size: var(--text-fluid-base);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-brand-amber);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  [data-reveal].revealed {
+    animation: none !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Smooth scrolling when not reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Selection colour */
+::selection {
+  background-color: var(--color-brand-teal);
+  color: white;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-brand-charcoal);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Skip to content (hidden until focused) */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-brand-charcoal);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 0.5rem 0.5rem;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ========== KEYFRAME ANIMATIONS ========== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes grow-up {
+  from {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+/* Hero-specific animations */
+.hero-title-shimmer {
+  background: linear-gradient(
+    110deg,
+    #FFFFFF 0%,
+    #FFFFFF 40%,
+    #E09A4A 50%,
+    #FFFFFF 60%,
+    #FFFFFF 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 6s ease-in-out infinite;
+}
+
+.hero-draw-line {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw 2s ease-out forwards;
+}
+
+.hero-draw-line-delayed {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw 2s ease-out 0.5s forwards;
+}
+
+.hero-fade-in {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-fade-in-d1 {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+
+.hero-fade-in-d2 {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+
+.hero-fade-in-d3 {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both;
+}
+
+.hero-fade-in-d4 {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+}
+
+.hero-illustration {
+  animation: fadeInRight 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+
+/* ========== SCROLL REVEAL SYSTEM ========== */
+
+[data-reveal] {
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+[data-reveal].revealed {
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-reveal="fade-up"].revealed {
+  animation-name: fadeInUp;
+  animation-duration: 0.8s;
+}
+
+[data-reveal="fade-left"].revealed {
+  animation-name: fadeInLeft;
+  animation-duration: 0.8s;
+}
+
+[data-reveal="scale-in"].revealed {
+  animation-name: scaleIn;
+  animation-duration: 0.7s;
+}
+
+/* Stagger delays for child elements */
+[data-reveal-delay="1"] { animation-delay: 0.08s; }
+[data-reveal-delay="2"] { animation-delay: 0.16s; }
+[data-reveal-delay="3"] { animation-delay: 0.24s; }
+[data-reveal-delay="4"] { animation-delay: 0.32s; }
+[data-reveal-delay="5"] { animation-delay: 0.40s; }
+[data-reveal-delay="6"] { animation-delay: 0.48s; }
+[data-reveal-delay="7"] { animation-delay: 0.56s; }
+[data-reveal-delay="8"] { animation-delay: 0.64s; }
+
+/* ========== BACKGROUND PATTERNS ========== */
+
+.bg-dot-pattern {
+  background-image: radial-gradient(circle, var(--color-brand-charcoal) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(to right, rgba(26, 92, 79, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(26, 92, 79, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Noise/grain texture overlay via ::after */
+.bg-noise {
+  position: relative;
+}
+
+.bg-noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ========== GRADIENT TEXT ========== */
+
+.text-gradient-teal {
+  background: linear-gradient(135deg, #237A6A, #1A5C4F, #D4872F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-amber {
+  background: linear-gradient(135deg, #D4872F, #E09A4A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

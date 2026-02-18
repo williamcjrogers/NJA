@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "water-utilities",
+    "title": "Water Utilities",
+    "icon": "Droplets",
+    "description": "Specialist environmental services for water and wastewater infrastructure. Watercourse management, vegetation clearance around treatment works, and emergency response for flood and storm events.",
+    "painPoints": [
+      "Maintaining vegetation around water infrastructure in live operational environments",
+      "Meeting stringent environmental and water quality compliance requirements",
+      "Responding rapidly to storm damage and flooding incidents",
+      "Finding contractors qualified to work safely in and around water"
+    ],
+    "relevantAccreditations": ["cscs", "smsts", "water-safety", "pa1-pa6", "first-aid"],
+    "relevantServices": ["vegetation-management", "watercourse-management", "emergency-response", "grounds-maintenance"]
+  },
+  {
+    "slug": "energy-telecoms",
+    "title": "Energy & Telecoms",
+    "icon": "Zap",
+    "description": "Vegetation management and site clearance for energy generation, distribution networks, and telecoms infrastructure. Operating safely around live assets with full NRSWA traffic management capability.",
+    "painPoints": [
+      "Vegetation encroachment threatening network reliability and safety clearances",
+      "Need for qualified teams who understand live working environments",
+      "Balancing planned maintenance programmes with reactive emergency call-outs",
+      "Traffic management requirements for roadside and highway network assets"
+    ],
+    "relevantAccreditations": ["cscs", "smsts", "sssts", "nrswa", "chainsaw"],
+    "relevantServices": ["vegetation-management", "arboriculture", "traffic-management", "emergency-response"]
+  },
+  {
+    "slug": "local-authorities",
+    "title": "Local Authorities",
+    "icon": "Building2",
+    "description": "Planned grounds maintenance, vegetation management, and reactive works for councils and public estate. Estate-wide programmes delivered to measurable standards with full compliance documentation.",
+    "painPoints": [
+      "Managing large estates with reducing budgets and increasing scrutiny",
+      "Meeting public expectations for open space and grounds quality",
+      "Ensuring contractor compliance with health, safety, and environmental standards",
+      "Responding to emergency and storm incidents affecting public areas"
+    ],
+    "relevantAccreditations": ["cscs", "smsts", "pa1-pa6", "constructionline", "chas"],
+    "relevantServices": ["grounds-maintenance", "vegetation-management", "arboriculture", "fencing", "emergency-response"]
+  },
+  {
+    "slug": "housing-associations",
+    "title": "Housing Associations",
+    "icon": "Home",
+    "description": "Estate grounds maintenance, vegetation management, and responsive repairs for housing providers. Planned programmes that maintain property standards and resident satisfaction.",
+    "painPoints": [
+      "Maintaining grounds across dispersed housing estates efficiently",
+      "Meeting resident expectations and responding to complaints promptly",
+      "Ensuring contractors are qualified and DBS-checked for residential environments",
+      "Balancing planned maintenance with reactive requests"
+    ],
+    "relevantAccreditations": ["cscs", "first-aid", "pa1-pa6", "chas"],
+    "relevantServices": ["grounds-maintenance", "vegetation-management", "fencing", "arboriculture"]
+  },
+  {
+    "slug": "tier-1-contractors",
+    "title": "Tier 1 Contractors",
+    "icon": "HardHat",
+    "description": "Specialist sub-contractor for vegetation clearance, site preparation, soft dig, and reinstatement on major infrastructure programmes. Self-delivery model with directly employed, qualified teams.",
+    "painPoints": [
+      "Finding specialist sub-contractors who hold the right qualifications",
+      "Supply chain reliability and ability to scale with programme demands",
+      "SSSTS, SMSTS, and CSCS compliance across all operatives",
+      "Need for self-delivered capability rather than further sub-contracting"
+    ],
+    "relevantAccreditations": ["cscs", "smsts", "sssts", "nrswa", "constructionline"],
+    "relevantServices": ["vegetation-management", "soft-dig", "traffic-management", "fencing", "arboriculture"]
+  }
+]

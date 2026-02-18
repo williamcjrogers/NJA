@@ -1,0 +1,26 @@
+[
+  {
+    "value": "50+",
+    "label": "Years Combined Experience",
+    "numericValue": 50,
+    "suffix": "+"
+  },
+  {
+    "value": "100%",
+    "label": "Directly Employed Teams",
+    "numericValue": 100,
+    "suffix": "%"
+  },
+  {
+    "value": "24/7",
+    "label": "Emergency Response",
+    "numericValue": 24,
+    "suffix": "/7"
+  },
+  {
+    "value": "0",
+    "label": "RIDDOR Incidents",
+    "numericValue": 0,
+    "suffix": ""
+  }
+]

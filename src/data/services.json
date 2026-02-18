@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "vegetation-management",
+    "title": "Vegetation Management & Clearance",
+    "shortTitle": "Vegetation Management",
+    "icon": "Trees",
+    "description": "Large-scale vegetation clearance and management for infrastructure corridors, operational sites, and public estate. Mechanised and manual methods deployed to programme or reactive requirements.",
+    "keywords": ["vegetation management contractor UK", "vegetation clearance", "utility vegetation management"]
+  },
+  {
+    "slug": "arboriculture",
+    "title": "Arboriculture",
+    "shortTitle": "Arboriculture",
+    "icon": "TreeDeciduous",
+    "description": "Specialist tree works including felling, sectional dismantling, pruning, and dead-wooding. NPTC-qualified teams operating in live environments with full traffic management capability.",
+    "keywords": ["arboriculture contractor", "tree surgery contractor UK", "utility arboriculture"]
+  },
+  {
+    "slug": "grounds-maintenance",
+    "title": "Grounds Maintenance",
+    "shortTitle": "Grounds Maintenance",
+    "icon": "Landmark",
+    "description": "Estate-wide planned grounds maintenance programmes for operational sites, public open spaces, and housing developments. Specialist equipment including Baroness bank mowers for difficult terrain.",
+    "keywords": ["grounds maintenance contractor", "estate grounds maintenance", "commercial grounds maintenance"]
+  },
+  {
+    "slug": "watercourse-management",
+    "title": "Watercourse & Drainage Management",
+    "shortTitle": "Watercourse Management",
+    "icon": "Waves",
+    "description": "Vegetation management and clearance of watercourses, drainage channels, and culverts. Teams qualified to Working Safely in Water Level 2 with PA1/PA6 herbicide application capability.",
+    "keywords": ["watercourse vegetation management", "drainage clearance contractor", "watercourse maintenance"]
+  },
+  {
+    "slug": "fencing",
+    "title": "Fencing Installation & Repair",
+    "shortTitle": "Fencing",
+    "icon": "Fence",
+    "description": "Installation, replacement, and repair of security, boundary, and stock fencing across operational and public sites. Reactive repair capability for storm and incident-damaged fencing.",
+    "keywords": ["commercial fencing contractor", "security fencing installation", "fencing repair contractor"]
+  },
+  {
+    "slug": "soft-dig",
+    "title": "Soft Dig, Backfill & Reinstatement",
+    "shortTitle": "Soft Dig & Reinstatement",
+    "icon": "Shovel",
+    "description": "Non-mechanical excavation, backfill, and surface reinstatement for utility and infrastructure works. Careful working around buried services and sensitive environments.",
+    "keywords": ["soft dig contractor", "backfill and reinstatement", "utility reinstatement contractor"]
+  },
+  {
+    "slug": "traffic-management",
+    "title": "NRSWA Traffic Management",
+    "shortTitle": "Traffic Management",
+    "icon": "TrafficCone",
+    "description": "NRSWA-compliant traffic management for roadside and highway works. Chapter 8-equipped vehicles and qualified operatives delivering safe working zones for all site activities.",
+    "keywords": ["NRSWA traffic management contractor", "Chapter 8 traffic management", "highway traffic management"]
+  },
+  {
+    "slug": "emergency-response",
+    "title": "Emergency & Reactive Response",
+    "shortTitle": "Emergency Response",
+    "icon": "Siren",
+    "description": "24/7 emergency and storm response for fallen trees, blocked watercourses, damaged fencing, and access clearance. Rapid mobilisation with self-contained teams and equipment.",
+    "keywords": ["emergency tree removal", "storm response contractor", "reactive vegetation clearance"]
+  }
+]

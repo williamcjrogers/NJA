@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Baroness Bank Mower",
+    "category": "Specialist Equipment",
+    "description": "Specialist self-propelled bank mower for steep gradients, embankments, and difficult terrain that conventional mowers cannot access.",
+    "image": "/images/placeholders/fleet-placeholder.svg"
+  },
+  {
+    "name": "Chapter 8 Flatbed",
+    "category": "Vehicles",
+    "description": "Fully Chapter 8-compliant flatbed vehicle with high-visibility chevrons, beacon bars, and onboard tool storage for highway and roadside works.",
+    "image": "/images/placeholders/fleet-placeholder.svg"
+  },
+  {
+    "name": "Chapter 8 4x4",
+    "category": "Vehicles",
+    "description": "All-terrain 4x4 equipped to Chapter 8 standard for accessing remote and off-road infrastructure sites in all conditions.",
+    "image": "/images/placeholders/fleet-placeholder.svg"
+  },
+  {
+    "name": "Plant Trailer",
+    "category": "Vehicles",
+    "description": "Heavy-duty trailer for transporting specialist equipment, plant, and materials between sites efficiently.",
+    "image": "/images/placeholders/fleet-placeholder.svg"
+  },
+  {
+    "name": "Chainsaws",
+    "category": "Tree & Vegetation Equipment",
+    "description": "Professional-grade chainsaws maintained to manufacturer specification, operated exclusively by NPTC-qualified personnel.",
+    "image": "/images/placeholders/fleet-placeholder.svg"
+  },
+  {
+    "name": "Brush Cutters & Strimmers",
+    "category": "Grounds Equipment",
+    "description": "Commercial brush cutters and strimmers for heavy-duty vegetation clearance and grounds maintenance operations.",
+    "image": "/images/placeholders/fleet-placeholder.svg"
+  },
+  {
+    "name": "Hedge Cutters",
+    "category": "Grounds Equipment",
+    "description": "Professional hedge cutting equipment for boundary, estate, and highway hedge maintenance programmes.",
+    "image": "/images/placeholders/fleet-placeholder.svg"
+  },
+  {
+    "name": "Blowers",
+    "category": "Grounds Equipment",
+    "description": "Commercial blowers for site clearance, debris management, and grounds maintenance finishing operations.",
+    "image": "/images/placeholders/fleet-placeholder.svg"
+  },
+  {
+    "name": "Full Grounds Maintenance Kit",
+    "category": "Grounds Equipment",
+    "description": "Complete commercial grounds maintenance equipment set for estate-wide mowing, edging, and grounds care programmes.",
+    "image": "/images/placeholders/fleet-placeholder.svg"
+  },
+  {
+    "name": "Electric Sprayers",
+    "category": "Specialist Equipment",
+    "description": "Electric spraying equipment for precise herbicide application by PA1/PA6 qualified operatives in vegetation management programmes.",
+    "image": "/images/placeholders/fleet-placeholder.svg"
+  },
+  {
+    "name": "Water Safety Equipment",
+    "category": "Safety Equipment",
+    "description": "Life jackets, throw lines, and water rescue equipment for all operations in and around watercourses, carried by Water Safety Level 2 trained teams.",
+    "image": "/images/placeholders/fleet-placeholder.svg"
+  },
+  {
+    "name": "Fencing Tools",
+    "category": "Specialist Equipment",
+    "description": "Complete fencing installation toolkit for security, boundary, and stock fencing work across all site types.",
+    "image": "/images/placeholders/fleet-placeholder.svg"
+  }
+]
