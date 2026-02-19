@@ -6,9 +6,9 @@
   --color-brand-teal-dark: #134840;
   --color-brand-charcoal: #2D2D2D;
   --color-brand-charcoal-light: #444444;
-  --color-brand-amber: #D4872F;
-  --color-brand-amber-light: #E09A4A;
-  --color-brand-amber-dark: #B87225;
+  --color-brand-amber: #E8731A;
+  --color-brand-amber-light: #F28C3A;
+  --color-brand-amber-dark: #CC5F10;
   --color-brand-cream: #F7F5F0;
   --color-brand-grey: #E8E6E1;
   --color-brand-grey-dark: #C5C3BE;
@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
     110deg,
     #FFFFFF 0%,
     #FFFFFF 40%,
-    #E09A4A 50%,
+    #F28C3A 50%,
     #FFFFFF 60%,
     #FFFFFF 100%
   );
@@ -318,14 +318,14 @@ h1, h2, h3, h4, h5, h6 {
 /* ========== GRADIENT TEXT ========== */
 
 .text-gradient-teal {
-  background: linear-gradient(135deg, #237A6A, #1A5C4F, #D4872F);
+  background: linear-gradient(135deg, #237A6A, #1A5C4F, #E8731A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .text-gradient-amber {
-  background: linear-gradient(135deg, #D4872F, #E09A4A);
+  background: linear-gradient(135deg, #E8731A, #F28C3A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

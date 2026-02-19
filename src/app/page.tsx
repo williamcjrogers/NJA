@@ -14,7 +14,7 @@ export default function HomePage() {
         title="Specialist Environmental Services for Critical Infrastructure"
         description="Vegetation management, arboriculture, and grounds maintenance for utilities, local authorities, and infrastructure contractors. Delivered by directly employed, qualified teams with owned specialist equipment."
         primaryCta={{ label: "View Our Services", href: "/services" }}
-        secondaryCta={{ label: "Work With Us", href: "/work-with-us" }}
+        secondaryCta={{ label: "Our Capabilities", href: "/services" }}
       />
       <SectionDivider variant="wave" fillColor="var(--color-brand-white)" />
       <AccreditationBar />

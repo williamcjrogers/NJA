@@ -62,7 +62,7 @@ export default function Hero({
       <div
         className="absolute -top-20 -right-20 w-[600px] h-[600px] md:w-[800px] md:h-[800px] rounded-full opacity-[0.15]"
         style={{
-          background: "radial-gradient(circle, rgba(212,135,47,0.4) 0%, rgba(212,135,47,0.1) 40%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(232,115,26,0.4) 0%, rgba(232,115,26,0.1) 40%, transparent 70%)",
         }}
         aria-hidden="true"
       />
@@ -174,7 +174,7 @@ export default function Hero({
                 {/* Stylized tree trunk */}
                 <path
                   d="M250,380 L250,220"
-                  stroke="rgba(224,154,74,0.6)"
+                  stroke="rgba(242,140,58,0.6)"
                   strokeWidth="4"
                   strokeLinecap="round"
                   pathLength="1"
@@ -185,7 +185,7 @@ export default function Hero({
                 {/* Main branches */}
                 <path
                   d="M250,280 C230,250 190,230 160,210"
-                  stroke="rgba(224,154,74,0.5)"
+                  stroke="rgba(242,140,58,0.5)"
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   pathLength="1"
@@ -193,7 +193,7 @@ export default function Hero({
                 />
                 <path
                   d="M250,260 C270,230 310,215 340,200"
-                  stroke="rgba(224,154,74,0.5)"
+                  stroke="rgba(242,140,58,0.5)"
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   pathLength="1"
@@ -202,7 +202,7 @@ export default function Hero({
                 />
                 <path
                   d="M250,240 C235,210 215,190 195,170"
-                  stroke="rgba(224,154,74,0.4)"
+                  stroke="rgba(242,140,58,0.4)"
                   strokeWidth="2"
                   strokeLinecap="round"
                   pathLength="1"
@@ -211,7 +211,7 @@ export default function Hero({
                 />
                 <path
                   d="M250,230 C265,200 290,180 310,160"
-                  stroke="rgba(224,154,74,0.4)"
+                  stroke="rgba(242,140,58,0.4)"
                   strokeWidth="2"
                   strokeLinecap="round"
                   pathLength="1"
@@ -237,20 +237,20 @@ export default function Hero({
                 </circle>
 
                 {/* Leaf accent shapes */}
-                <ellipse cx="140" cy="175" rx="12" ry="6" fill="rgba(224,154,74,0.2)" transform="rotate(-30 140 175)">
+                <ellipse cx="140" cy="175" rx="12" ry="6" fill="rgba(242,140,58,0.2)" transform="rotate(-30 140 175)">
                   <animateTransform attributeName="transform" type="rotate" values="-32 140 175;-28 140 175;-32 140 175" dur="6s" repeatCount="indefinite" />
                 </ellipse>
-                <ellipse cx="355" cy="170" rx="10" ry="5" fill="rgba(224,154,74,0.18)" transform="rotate(25 355 170)">
+                <ellipse cx="355" cy="170" rx="10" ry="5" fill="rgba(242,140,58,0.18)" transform="rotate(25 355 170)">
                   <animateTransform attributeName="transform" type="rotate" values="23 355 170;27 355 170;23 355 170" dur="7s" repeatCount="indefinite" />
                 </ellipse>
-                <ellipse cx="230" cy="125" rx="11" ry="5" fill="rgba(224,154,74,0.15)" transform="rotate(-15 230 125)">
+                <ellipse cx="230" cy="125" rx="11" ry="5" fill="rgba(242,140,58,0.15)" transform="rotate(-15 230 125)">
                   <animateTransform attributeName="transform" type="rotate" values="-17 230 125;-13 230 125;-17 230 125" dur="5s" repeatCount="indefinite" />
                 </ellipse>
 
                 {/* Root system below */}
                 <path
                   d="M250,380 C240,400 220,420 190,440"
-                  stroke="rgba(224,154,74,0.3)"
+                  stroke="rgba(242,140,58,0.3)"
                   strokeWidth="2"
                   strokeLinecap="round"
                   pathLength="1"
@@ -259,7 +259,7 @@ export default function Hero({
                 />
                 <path
                   d="M250,380 C260,400 280,420 310,435"
-                  stroke="rgba(224,154,74,0.3)"
+                  stroke="rgba(242,140,58,0.3)"
                   strokeWidth="2"
                   strokeLinecap="round"
                   pathLength="1"
@@ -268,7 +268,7 @@ export default function Hero({
                 />
                 <path
                   d="M250,385 C245,410 235,430 225,450"
-                  stroke="rgba(224,154,74,0.2)"
+                  stroke="rgba(242,140,58,0.2)"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   pathLength="1"
@@ -277,7 +277,7 @@ export default function Hero({
                 />
                 <path
                   d="M250,385 C255,410 270,430 280,450"
-                  stroke="rgba(224,154,74,0.2)"
+                  stroke="rgba(242,140,58,0.2)"
                   strokeWidth="1.5"
                   strokeLinecap="round"
                   pathLength="1"
@@ -286,10 +286,10 @@ export default function Hero({
                 />
 
                 {/* Small pulsing detail dots */}
-                <circle cx="175" cy="230" r="2" fill="rgba(224,154,74,0.4)">
+                <circle cx="175" cy="230" r="2" fill="rgba(242,140,58,0.4)">
                   <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
                 </circle>
-                <circle cx="320" cy="225" r="2.5" fill="rgba(224,154,74,0.35)">
+                <circle cx="320" cy="225" r="2.5" fill="rgba(242,140,58,0.35)">
                   <animate attributeName="opacity" values="0.15;0.45;0.15" dur="4s" repeatCount="indefinite" />
                 </circle>
                 <circle cx="270" cy="165" r="1.5" fill="rgba(255,255,255,0.3)">
