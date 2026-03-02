@@ -15,14 +15,26 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export default function ServicesGrid({ compact = false }: { compact?: boolean }) {
   return (
-    <section className="relative py-16 md:py-24 bg-brand-cream overflow-hidden" aria-labelledby="services-heading">
+    <section className="relative pt-0 pb-16 md:pt-2 md:pb-24 bg-brand-cream overflow-hidden" aria-labelledby="services-heading">
       {/* Dot pattern background */}
       <div
-        className="absolute inset-0 opacity-[0.02]"
+        className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage: "radial-gradient(circle, var(--color-brand-charcoal) 1px, transparent 1px)",
-          backgroundSize: "24px 24px",
+          backgroundSize: "32px 32px",
         }}
+        aria-hidden="true"
+      />
+
+      {/* Subtle animated background shapes */}
+      <div
+        className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-brand-teal/[0.03] rounded-full blur-3xl mix-blend-multiply pointer-events-none"
+        style={{ animation: "float 15s ease-in-out infinite" }}
+        aria-hidden="true"
+      />
+      <div
+        className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-brand-amber/[0.03] rounded-full blur-3xl mix-blend-multiply pointer-events-none"
+        style={{ animation: "float 18s ease-in-out infinite reverse" }}
         aria-hidden="true"
       />
 
