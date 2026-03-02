@@ -96,8 +96,8 @@ export default function Hero({
               className={cn(
                 "font-bold leading-[1.05] mb-6 hero-fade-in-d1",
                 size === "lg"
-                  ? "text-fluid-5xl md:text-fluid-6xl"
-                  : "text-fluid-4xl md:text-fluid-5xl",
+                  ? "text-fluid-4xl md:text-fluid-5xl"
+                  : "text-fluid-3xl md:text-fluid-4xl",
                 isHomepage ? "hero-title-shimmer" : "text-white"
               )}
             >
