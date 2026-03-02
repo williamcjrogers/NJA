@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Hero from "@/components/sections/Hero";
 import CTASection from "@/components/sections/CTASection";
-import AccreditationBar from "@/components/layout/AccreditationBar";
 import { getContentBySlug, getAllSlugs } from "@/lib/content";
 import { createMetadata } from "@/lib/metadata";
 import services from "@/data/services.json";
@@ -49,7 +48,6 @@ export default async function ServicePage({ params }: Props) {
         secondaryCta={{ label: "View All Services", href: "/services" }}
         size="md"
       />
-      <AccreditationBar />
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-4 prose prose-lg prose-brand">
           <MDXRemote source={content.content} />

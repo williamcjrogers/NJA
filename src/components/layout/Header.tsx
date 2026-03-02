@@ -31,7 +31,7 @@ function DesktopDropdown({ item }: { item: NavItem }) {
               <Link
                 key={child.href}
                 href={child.href}
-                className="block px-4 py-2.5 text-sm text-brand-charcoal hover:bg-brand-cream hover:text-brand-teal transition-colors"
+                className="block px-4 py-2.5 text-sm text-brand-charcoal hover:bg-brand-teal/5 hover:text-brand-teal transition-colors"
               >
                 {child.label}
               </Link>
@@ -50,13 +50,13 @@ export default function Header() {
   const navItems = navigation.main as NavItem[];
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-brand-grey">
-      <div className="mx-auto max-w-7xl px-4">
+    <header className="sticky top-0 z-40 bg-[#F7F5F0]/95 backdrop-blur-sm border-b border-brand-grey">
+      <div className="mx-auto w-[92%] max-w-[1300px] xl:w-[88%] lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <LogoFull />
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
+          <nav className="hidden lg:flex items-center gap-2 xl:gap-4" aria-label="Main navigation">
             {navItems.map((item) => (
               <DesktopDropdown key={item.href} item={item} />
             ))}
@@ -109,9 +109,8 @@ export default function Header() {
                     >
                       {item.label}
                       <ChevronDown
-                        className={`h-4 w-4 transition-transform ${
-                          openSubmenu === item.label ? "rotate-180" : ""
-                        }`}
+                        className={`h-4 w-4 transition-transform ${openSubmenu === item.label ? "rotate-180" : ""
+                          }`}
                         aria-hidden="true"
                       />
                     </button>

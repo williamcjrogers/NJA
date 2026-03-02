@@ -1,5 +1,4 @@
 import Hero from "@/components/sections/Hero";
-import AccreditationBar from "@/components/layout/AccreditationBar";
 import ServicesGrid from "@/components/sections/ServicesGrid";
 import StatsBar from "@/components/sections/StatsBar";
 import SectorPathways from "@/components/sections/SectorPathways";
@@ -16,9 +15,7 @@ export default function HomePage() {
         primaryCta={{ label: "View Our Services", href: "/services" }}
         secondaryCta={{ label: "Our Capabilities", href: "/services" }}
       />
-      <SectionDivider variant="wave" fillColor="var(--color-brand-white)" />
-      <AccreditationBar />
-      <SectionDivider variant="curve" fillColor="var(--color-brand-cream)" />
+      <SectionDivider variant="wave" fillColor="var(--color-brand-cream)" />
       <ServicesGrid compact />
       <SectionDivider variant="angle" fillColor="var(--color-brand-charcoal)" />
       <StatsBar />
