@@ -34,29 +34,8 @@ export default function useReveal() {
       observer.observe(el);
     });
 
-    const mutationObserver = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        mutation.addedNodes.forEach((node) => {
-          if (node instanceof HTMLElement) {
-            if (node.hasAttribute("data-reveal")) {
-              observer.observe(node);
-            }
-            node.querySelectorAll("[data-reveal]").forEach((child) => {
-              observer.observe(child);
-            });
-          }
-        });
-      });
-    });
-
-    mutationObserver.observe(document.body, {
-      childList: true,
-      subtree: true,
-    });
-
     return () => {
       observer.disconnect();
-      mutationObserver.disconnect();
     };
   }, []);
 }

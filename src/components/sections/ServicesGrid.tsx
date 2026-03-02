@@ -26,25 +26,17 @@ export default function ServicesGrid({ compact = false }: { compact?: boolean })
         aria-hidden="true"
       />
 
-      {/* Subtle animated background shapes (increased opacity for visibility) */}
+      {/* Subtle static background accents */}
       <div
-        className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-brand-teal/[0.08] rounded-full blur-3xl mix-blend-multiply pointer-events-none"
-        style={{ animation: "float 15s ease-in-out infinite" }}
+        className="absolute top-[-10%] left-[-10%] w-[400px] h-[400px] rounded-full pointer-events-none"
+        style={{ background: "radial-gradient(circle, rgba(26,92,79,0.06) 0%, transparent 70%)" }}
         aria-hidden="true"
       />
       <div
-        className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-brand-amber/[0.08] rounded-full blur-3xl mix-blend-multiply pointer-events-none"
-        style={{ animation: "float 18s ease-in-out infinite reverse" }}
+        className="absolute bottom-[-10%] right-[-10%] w-[400px] h-[400px] rounded-full pointer-events-none"
+        style={{ background: "radial-gradient(circle, rgba(232,115,26,0.06) 0%, transparent 70%)" }}
         aria-hidden="true"
       />
-
-      {/* Dynamic architectural lines background */}
-      <svg className="absolute inset-0 w-full h-full opacity-[0.25] pointer-events-none" aria-hidden="true">
-        <line x1="5%" y1="0" x2="5%" y2="100%" stroke="var(--color-brand-teal)" strokeWidth="1" strokeDasharray="4 8" className="animate-[pulse_4s_ease-in-out_infinite]" />
-        <line x1="95%" y1="0" x2="95%" y2="100%" stroke="var(--color-brand-amber)" strokeWidth="1" strokeDasharray="4 8" className="animate-[pulse_5s_ease-in-out_infinite]" style={{ animationDelay: "1s" }} />
-        <path d="M0,150 L100,150" stroke="var(--color-brand-teal)" strokeWidth="1" opacity="0.5" />
-        <path d="M100%,350 Lcalc(100% - 100px),350" stroke="var(--color-brand-amber)" strokeWidth="1" opacity="0.5" />
-      </svg>
 
       {/* Pull content up into the SectionDivider's solid color space to eliminate deadspace */}
       <div className="relative z-10 mx-auto max-w-7xl px-4">

@@ -13,7 +13,7 @@ export default function CTASection({
 }: CTASectionProps) {
   return (
     <section
-      className="relative py-16 md:py-24 overflow-hidden bg-noise"
+      className="relative py-16 md:py-24 overflow-hidden"
       style={{
         background: "linear-gradient(135deg, var(--color-brand-teal-dark) 0%, var(--color-brand-teal) 50%, var(--color-brand-teal-dark) 100%)",
       }}

@@ -10,7 +10,7 @@ export default function HomePage() {
     <>
       <Hero
         subtitle="Nicolas James Environmental"
-        title="Bridging the Gap"
+        title="Where Precision Meets the Environment."
         description="We bring reliable systems, proactive project management, and a highly trusted supply chain to the environment and construction sectors. Delivering certainty for clients and reliability for our long-standing partners."
         primaryCta={{ label: "View Our Services", href: "/services" }}
         secondaryCta={{ label: "Our Capabilities", href: "/services" }}

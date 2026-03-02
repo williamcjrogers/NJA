@@ -1,5 +1,5 @@
 import Hero from "@/components/sections/Hero";
-import StatsBar from "@/components/sections/StatsBar";
+
 import CTASection from "@/components/sections/CTASection";
 import { createMetadata } from "@/lib/metadata";
 import { Users, Truck, ShieldCheck } from "lucide-react";
@@ -15,11 +15,11 @@ export default function AboutPage() {
     <>
       <Hero
         subtitle="About Us"
-        title="Bridging the Gap in Environmental & Construction Services"
+        title="Where Precision Meets the Environment."
         description="Founded by industry veterans who bring systems, processes, and robust project management to a supply chain we have trusted for years."
         size="md"
       />
-      <StatsBar />
+
 
       {/* Our Story */}
       <section className="py-16 md:py-24 bg-brand-cream">

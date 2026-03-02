@@ -165,7 +165,7 @@ export default function Hero({
                 viewBox="0 0 500 500"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-full h-auto max-w-[420px] mx-auto drop-shadow-2xl"
+                className="w-full h-auto max-w-[420px] mx-auto"
               >
                 {/* Outer ring - represents ecosystem */}
                 <circle cx="250" cy="250" r="220" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
@@ -220,32 +220,16 @@ export default function Hero({
                 />
 
                 {/* Canopy - abstract breathing circles */}
-                <circle cx="160" cy="200" r="35" fill="rgba(35,122,106,0.15)" stroke="rgba(255,255,255,0.1)" strokeWidth="1">
-                  <animate attributeName="r" values="33;37;33" dur="4s" repeatCount="indefinite" />
-                </circle>
-                <circle cx="340" cy="190" r="30" fill="rgba(35,122,106,0.12)" stroke="rgba(255,255,255,0.08)" strokeWidth="1">
-                  <animate attributeName="r" values="28;32;28" dur="5s" repeatCount="indefinite" />
-                </circle>
-                <circle cx="195" cy="160" r="25" fill="rgba(35,122,106,0.1)" stroke="rgba(255,255,255,0.08)" strokeWidth="0.8">
-                  <animate attributeName="r" values="23;27;23" dur="4.5s" repeatCount="indefinite" />
-                </circle>
-                <circle cx="310" cy="150" r="28" fill="rgba(35,122,106,0.1)" stroke="rgba(255,255,255,0.08)" strokeWidth="0.8">
-                  <animate attributeName="r" values="26;30;26" dur="5.5s" repeatCount="indefinite" />
-                </circle>
-                <circle cx="250" cy="140" r="32" fill="rgba(35,122,106,0.13)" stroke="rgba(255,255,255,0.1)" strokeWidth="1">
-                  <animate attributeName="r" values="30;34;30" dur="4.2s" repeatCount="indefinite" />
-                </circle>
+                <circle cx="160" cy="200" r="35" fill="rgba(35,122,106,0.15)" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
+                <circle cx="340" cy="190" r="30" fill="rgba(35,122,106,0.12)" stroke="rgba(255,255,255,0.08)" strokeWidth="1" />
+                <circle cx="195" cy="160" r="25" fill="rgba(35,122,106,0.1)" stroke="rgba(255,255,255,0.08)" strokeWidth="0.8" />
+                <circle cx="310" cy="150" r="28" fill="rgba(35,122,106,0.1)" stroke="rgba(255,255,255,0.08)" strokeWidth="0.8" />
+                <circle cx="250" cy="140" r="32" fill="rgba(35,122,106,0.13)" stroke="rgba(255,255,255,0.1)" strokeWidth="1" />
 
                 {/* Leaf accent shapes */}
-                <ellipse cx="140" cy="175" rx="12" ry="6" fill="rgba(242,140,58,0.2)" transform="rotate(-30 140 175)">
-                  <animateTransform attributeName="transform" type="rotate" values="-32 140 175;-28 140 175;-32 140 175" dur="6s" repeatCount="indefinite" />
-                </ellipse>
-                <ellipse cx="355" cy="170" rx="10" ry="5" fill="rgba(242,140,58,0.18)" transform="rotate(25 355 170)">
-                  <animateTransform attributeName="transform" type="rotate" values="23 355 170;27 355 170;23 355 170" dur="7s" repeatCount="indefinite" />
-                </ellipse>
-                <ellipse cx="230" cy="125" rx="11" ry="5" fill="rgba(242,140,58,0.15)" transform="rotate(-15 230 125)">
-                  <animateTransform attributeName="transform" type="rotate" values="-17 230 125;-13 230 125;-17 230 125" dur="5s" repeatCount="indefinite" />
-                </ellipse>
+                <ellipse cx="140" cy="175" rx="12" ry="6" fill="rgba(242,140,58,0.2)" transform="rotate(-30 140 175)" />
+                <ellipse cx="355" cy="170" rx="10" ry="5" fill="rgba(242,140,58,0.18)" transform="rotate(25 355 170)" />
+                <ellipse cx="230" cy="125" rx="11" ry="5" fill="rgba(242,140,58,0.15)" transform="rotate(-15 230 125)" />
 
                 {/* Root system below */}
                 <path
@@ -285,50 +269,34 @@ export default function Hero({
                   style={{ animationDelay: "1.9s" }}
                 />
 
-                {/* Small pulsing detail dots */}
-                <circle cx="175" cy="230" r="2" fill="rgba(242,140,58,0.4)">
-                  <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
-                </circle>
-                <circle cx="320" cy="225" r="2.5" fill="rgba(242,140,58,0.35)">
-                  <animate attributeName="opacity" values="0.15;0.45;0.15" dur="4s" repeatCount="indefinite" />
-                </circle>
-                <circle cx="270" cy="165" r="1.5" fill="rgba(255,255,255,0.3)">
-                  <animate attributeName="opacity" values="0.1;0.4;0.1" dur="3.5s" repeatCount="indefinite" />
-                </circle>
-                <circle cx="210" cy="195" r="2" fill="rgba(255,255,255,0.25)">
-                  <animate attributeName="opacity" values="0.15;0.35;0.15" dur="4.5s" repeatCount="indefinite" />
-                </circle>
+                {/* Detail dots */}
+                <circle cx="175" cy="230" r="2" fill="rgba(242,140,58,0.4)" />
+                <circle cx="320" cy="225" r="2.5" fill="rgba(242,140,58,0.35)" />
+                <circle cx="270" cy="165" r="1.5" fill="rgba(255,255,255,0.3)" />
+                <circle cx="210" cy="195" r="2" fill="rgba(255,255,255,0.25)" />
 
                 {/* Growth rings at base */}
                 <ellipse cx="250" cy="385" rx="40" ry="8" stroke="rgba(255,255,255,0.06)" strokeWidth="0.5" fill="none" />
                 <ellipse cx="250" cy="385" rx="60" ry="12" stroke="rgba(255,255,255,0.04)" strokeWidth="0.5" fill="none" />
                 <ellipse cx="250" cy="385" rx="80" ry="16" stroke="rgba(255,255,255,0.03)" strokeWidth="0.5" fill="none" />
 
-                {/* Flowing water/infrastructure line */}
+                {/* Water/infrastructure line */}
                 <path
                   d="M80,430 Q165,410 250,430 Q335,450 420,430"
                   stroke="rgba(35,122,106,0.3)"
                   strokeWidth="1.5"
                   fill="none"
                   strokeDasharray="4,6"
-                >
-                  <animate attributeName="stroke-dashoffset" values="0;10" dur="3s" repeatCount="indefinite" />
-                </path>
+                />
               </svg>
             </div>
           )}
         </div>
       </div>
 
-      {/* Floating decorative elements */}
+      {/* Decorative ring */}
       <div
         className="absolute top-16 right-[12%] w-48 h-48 md:w-64 md:h-64 rounded-full border border-white/[0.04]"
-        style={{ animation: "float 10s ease-in-out infinite" }}
-        aria-hidden="true"
-      />
-      <div
-        className="absolute -bottom-16 left-[5%] w-32 h-32 md:w-40 md:h-40 rounded-full border border-white/[0.03]"
-        style={{ animation: "float 14s ease-in-out infinite 3s" }}
         aria-hidden="true"
       />
     </section>
