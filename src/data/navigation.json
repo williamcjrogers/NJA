@@ -66,17 +66,7 @@
     },
     {
       "label": "About",
-      "href": "/about",
-      "children": [
-        {
-          "label": "Our Story",
-          "href": "/about"
-        },
-        {
-          "label": "Meet the Team",
-          "href": "/about/team"
-        }
-      ]
+      "href": "/about"
     },
     {
       "label": "Work With Us",

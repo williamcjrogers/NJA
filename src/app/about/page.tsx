@@ -2,8 +2,7 @@ import Hero from "@/components/sections/Hero";
 import StatsBar from "@/components/sections/StatsBar";
 import CTASection from "@/components/sections/CTASection";
 import { createMetadata } from "@/lib/metadata";
-import Link from "next/link";
-import { ArrowRight, Users, Truck, ShieldCheck } from "lucide-react";
+import { Users, Truck, ShieldCheck } from "lucide-react";
 
 export const metadata = createMetadata({
   title: "About Us",
@@ -76,35 +75,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Explore Further */}
-      <section className="py-16 md:py-24 bg-brand-cream">
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Link href="/about/team" className="group block bg-white rounded-xl p-8 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-brand-charcoal mb-2 group-hover:text-brand-teal transition-colors">
-                Meet the Team
-              </h3>
-              <p className="text-sm text-brand-charcoal-light mb-4">
-                Our people, their qualifications, and the experience they bring to every project.
-              </p>
-              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-teal">
-                View team <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-              </span>
-            </Link>
-            <Link href="/about/fleet" className="group block bg-white rounded-xl p-8 hover:shadow-lg transition-all">
-              <h3 className="text-xl font-bold text-brand-charcoal mb-2 group-hover:text-brand-teal transition-colors">
-                Fleet & Equipment
-              </h3>
-              <p className="text-sm text-brand-charcoal-light mb-4">
-                The specialist equipment we own and operate, from Baroness bank mowers to Chapter 8 vehicles.
-              </p>
-              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-teal">
-                View fleet <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
-              </span>
-            </Link>
-          </div>
-        </div>
-      </section>
 
       <CTASection />
     </>
