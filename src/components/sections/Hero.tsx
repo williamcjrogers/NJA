@@ -104,7 +104,7 @@ export default function Hero({
               {title}
             </h1>
             {description && (
-              <p className="hero-fade-in-d2 text-fluid-lg text-white/75 leading-relaxed mb-10 max-w-2xl font-light">
+              <p className="hero-fade-in-d2 text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-2xl font-light">
                 {description}
               </p>
             )}
