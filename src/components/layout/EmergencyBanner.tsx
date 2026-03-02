@@ -19,3 +19,5 @@ export default function EmergencyBanner() {
     </div>
   );
 }
+
+// Force recompile
