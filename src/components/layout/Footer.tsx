@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Phone, Mail } from "lucide-react";
 import navigation from "@/data/navigation.json";
-import accreditations from "@/data/accreditations.json";
+
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -25,21 +25,6 @@ export default function Footer() {
         aria-hidden="true"
       />
 
-      {/* Accreditation strip */}
-      <div className="relative z-10 border-b border-white/10 py-6">
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-            {accreditations.map((acc) => (
-              <span
-                key={acc.id}
-                className="text-xs font-semibold tracking-wide text-white/60 uppercase"
-              >
-                {acc.name}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
 
       {/* Main footer */}
       <div className="relative z-10 mx-auto max-w-7xl px-4 py-12 md:py-16">
