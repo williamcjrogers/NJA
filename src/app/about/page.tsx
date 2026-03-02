@@ -7,7 +7,7 @@ import { ArrowRight, Users, Truck, ShieldCheck } from "lucide-react";
 
 export const metadata = createMetadata({
   title: "About Us",
-  description: "Nicolas James Environmental delivers specialist environmental services for critical infrastructure. Directly employed teams, owned equipment, infrastructure-sector standards.",
+  description: "Founded by industry veterans who bring systems, processes, and robust project management to a supply chain we have trusted for years.",
   path: "/about",
 });
 
@@ -16,8 +16,8 @@ export default function AboutPage() {
     <>
       <Hero
         subtitle="About Us"
-        title="Specialist Environmental Services, Built for Infrastructure"
-        description="We deliver planned and reactive vegetation, tree, grounds, and associated site works in live environments. Our teams are directly employed, our equipment is owned, and our standards are infrastructure-grade."
+        title="Bridging the Gap in Environmental & Construction Services"
+        description="Founded by industry veterans who bring systems, processes, and robust project management to a supply chain we have trusted for years."
         size="md"
       />
       <StatsBar />
@@ -31,13 +31,13 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-brand-charcoal-light leading-relaxed">
               <p>
-                Nicolas James Environmental was founded to deliver specialist environmental services with the rigour and reliability that infrastructure asset owners demand. We recognised a clear gap: clients needed a contractor that speaks the language of utilities and Tier 1 contractors, operates with infrastructure-sector standards, but delivers with the agility and accountability of an owner-managed business.
+                Nicolas James Environmental was built by a group of industry veterans who have spent years working in the construction and environmental sectors. Looking closely at how the industry operates, we noticed a frequent, damaging gap between client relations and the manual works on the ground.
               </p>
               <p>
-                Our capability includes large-scale vegetation and tree clearance, watercourse and drainage vegetation management, estate-wide grounds maintenance, soft dig, backfill and reinstatement, fencing installation and repair, and NRSWA-compliant traffic-managed works.
+                Too often, this disconnect leads to unreliable clients for suppliers, and an unreliable supply chain for clients. Projects stall, communication breaks down, and quality suffers because the project management systems aren&apos;t there to support the individuals doing the hard work.
               </p>
               <p>
-                We are set up to respond to emergency and storm-related incidents, including fallen trees, blocked watercourses, damaged fencing, and access clearance, while the core of the business is built around planned, repeatable maintenance programmes for asset owners.
+                We decided to change that. We bring rigorous systems, professional processes, and robust project management to suppliers we have worked with for years and trust implicitly. By bridging this gap, we deliver certainty for our clients and consistent, reliable work for our supply chain partners.
               </p>
             </div>
           </div>
@@ -53,23 +53,23 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-brand-cream rounded-xl p-8">
               <Users className="h-10 w-10 text-brand-teal mb-4" aria-hidden="true" />
-              <h3 className="text-xl font-bold text-brand-charcoal mb-3">Directly Employed Teams</h3>
+              <h3 className="text-xl font-bold text-brand-charcoal mb-3">Trusted Supply Chain</h3>
               <p className="text-sm text-brand-charcoal-light leading-relaxed">
-                Our operatives are directly employed, not sub-contracted. This means consistent quality, direct accountability, and teams who know our standards and your sites.
-              </p>
-            </div>
-            <div className="bg-brand-cream rounded-xl p-8">
-              <Truck className="h-10 w-10 text-brand-teal mb-4" aria-hidden="true" />
-              <h3 className="text-xl font-bold text-brand-charcoal mb-3">Owned Equipment</h3>
-              <p className="text-sm text-brand-charcoal-light leading-relaxed">
-                We own the core assets to deliver in-house: specialist mowers, Chapter 8 vehicles, chainsaws, grounds kit, and fencing tools. Where larger plant is required, we hire in as needed to remain flexible.
+                We don&apos;t just hire anyone. We work exclusively with the best suppliers and subcontractors who we have known and trusted for years in the industry.
               </p>
             </div>
             <div className="bg-brand-cream rounded-xl p-8">
               <ShieldCheck className="h-10 w-10 text-brand-teal mb-4" aria-hidden="true" />
-              <h3 className="text-xl font-bold text-brand-charcoal mb-3">Infrastructure Standards</h3>
+              <h3 className="text-xl font-bold text-brand-charcoal mb-3">Robust Project Management</h3>
               <p className="text-sm text-brand-charcoal-light leading-relaxed">
-                CSCS, SMSTS, SSSTS, NRSWA, PA1/PA6, chainsaw certifications, Water Safety Level 2, and plant tickets. Our teams are qualified for live, regulated environments.
+                We bring the systems, processes, and oversight to ensure that manual construction works are delivered smoothly, on time, and safely for all parties.
+              </p>
+            </div>
+            <div className="bg-brand-cream rounded-xl p-8">
+              <Truck className="h-10 w-10 text-brand-teal mb-4" aria-hidden="true" />
+              <h3 className="text-xl font-bold text-brand-charcoal mb-3">Industry-Leading Reliability</h3>
+              <p className="text-sm text-brand-charcoal-light leading-relaxed">
+                By bridging the gap between client expectations and on-the-ground delivery, we create a reliable environment for both clients and our supply chain.
               </p>
             </div>
           </div>

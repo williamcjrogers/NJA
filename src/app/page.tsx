@@ -11,8 +11,8 @@ export default function HomePage() {
     <>
       <Hero
         subtitle="Nicolas James Environmental"
-        title="Specialist Environmental Services for Critical Infrastructure"
-        description="Vegetation management, arboriculture, and grounds maintenance for utilities, local authorities, and infrastructure contractors. Delivered by directly employed, qualified teams with owned specialist equipment."
+        title="Bridging the Gap Between Clients and Construction"
+        description="We bring reliable systems, proactive project management, and a highly trusted supply chain to the environment and construction sectors. Delivering certainty for clients and reliability for our long-standing partners."
         primaryCta={{ label: "View Our Services", href: "/services" }}
         secondaryCta={{ label: "Our Capabilities", href: "/services" }}
       />

@@ -23,7 +23,7 @@ const dmSerif = DM_Serif_Display({
 export const metadata: Metadata = {
   title: "Nicolas James Environmental | Specialist Environmental Services for Critical Infrastructure",
   description:
-    "Specialist vegetation management, arboriculture, and grounds maintenance for utilities, local authorities, and infrastructure contractors. Directly employed teams, owned equipment, infrastructure-sector standards.",
+    "Expert project management for environmental and construction services. We bridge the gap between clients and construction by bringing systems, processes, and our trusted supply chain to every project.",
   keywords: [
     "vegetation management contractor UK",
     "environmental services contractor",

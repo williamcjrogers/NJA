@@ -53,7 +53,7 @@ export default function Footer() {
               </svg>
             </div>
             <p className="text-sm text-white/70 leading-relaxed mb-6">
-              Specialist environmental services for critical infrastructure. Protecting networks, managing environments, maintaining assets.
+              Expert project management for environmental and construction services. Bridging the gap between clients and our trusted supply chain.
             </p>
             <div className="space-y-3">
               <a href={`tel:${navigation.contact.phone.replace(/\s/g, "")}`} className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors">
