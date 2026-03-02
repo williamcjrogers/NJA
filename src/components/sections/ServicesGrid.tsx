@@ -47,7 +47,7 @@ export default function ServicesGrid({ compact = false }: { compact?: boolean })
       </svg>
 
       {/* Pull content up into the SectionDivider's solid color space to eliminate deadspace */}
-      <div className="relative z-10 mx-auto max-w-7xl px-4 -mt-2 md:-mt-8 lg:-mt-12">
+      <div className="relative z-10 mx-auto max-w-7xl px-4">
         <div className="text-center mb-12" data-reveal="fade-up">
           {/* Accent line */}
           <div className="flex justify-center mb-4" aria-hidden="true">
@@ -71,6 +71,7 @@ export default function ServicesGrid({ compact = false }: { compact?: boolean })
                   href={`/services/${service.slug}`}
                   icon={IconComponent ? <IconComponent className={compact ? "h-8 w-8" : "h-6 w-6"} /> : null}
                   compact={compact}
+                  index={index}
                 />
               </div>
             );

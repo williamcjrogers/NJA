@@ -10,15 +10,31 @@ interface CardProps {
   tag?: string;
   className?: string;
   compact?: boolean;
+  index?: number;
 }
 
-export default function Card({ title, description, href, icon, tag, className, compact = false }: CardProps) {
+export default function Card({ title, description, href, icon, tag, className, compact = false, index }: CardProps) {
+  // Define subtle pastoral backgrounds for compact cards
+  const getSubtleBackground = (idx?: number) => {
+    if (idx === undefined) return "bg-white";
+    const backgrounds = [
+      "bg-gradient-to-br from-[#f8faf9] to-[#edf3f1]", // Subtle teal
+      "bg-gradient-to-bl from-[#fffdfa] to-[#fcf7ec]", // Subtle amber
+      "bg-gradient-to-tr from-[#fafafa] to-[#f0f2f4]", // Subtle slate
+      "bg-gradient-to-tl from-[#fbfbfa] to-[#f4f3ed]", // Subtle sage/cream
+    ];
+    return backgrounds[idx % backgrounds.length];
+  };
+
+  const compactBg = getSubtleBackground(index);
+
   if (compact) {
     return (
       <Link
         href={href}
         className={cn(
-          "group relative flex flex-col items-center justify-center text-center bg-white rounded-xl border border-transparent p-6 h-64 overflow-hidden shadow-sm",
+          "group relative flex flex-col items-center justify-center text-center rounded-xl border border-transparent p-6 h-64 overflow-hidden shadow-sm",
+          compactBg,
           "transition-all duration-500 ease-out z-10",
           "hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-teal/15 hover:border-brand-teal/30 hover:z-20",
           className
@@ -42,7 +58,7 @@ export default function Card({ title, description, href, icon, tag, className, c
         <div className="transform transition-transform duration-500 ease-out group-hover:-translate-y-4 flex flex-col items-center">
           {icon && (
             <div
-              className="mb-5 w-16 h-16 rounded-2xl bg-brand-cream flex items-center justify-center text-brand-charcoal transition-all duration-500 ease-out group-hover:scale-110 group-hover:bg-brand-teal group-hover:text-white group-hover:shadow-lg group-hover:shadow-brand-teal/30"
+              className="mb-5 w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-brand-charcoal transition-all duration-500 ease-out group-hover:scale-110 group-hover:bg-brand-teal group-hover:text-white group-hover:shadow-lg group-hover:shadow-brand-teal/30"
               aria-hidden="true"
             >
               {icon}
