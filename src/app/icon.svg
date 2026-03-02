@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Brand Dark Green Background -->
+  <rect width="512" height="512" rx="128" fill="#134840" />
+  
+  <!-- "NJE" with NJ in white and E in amber -->
+  <text x="50%" y="56%" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="200" text-anchor="middle" dominant-baseline="middle" letter-spacing="6">
+    <tspan fill="#ffffff">NJ</tspan><tspan fill="#E8731A">E</tspan>
+  </text>
+</svg>
