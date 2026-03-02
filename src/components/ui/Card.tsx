@@ -71,7 +71,7 @@ export default function Card({ title, description, href, icon, tag, className, c
       className={cn(
         "group relative block bg-white rounded-xl border border-brand-grey/80 p-6 pt-7 overflow-hidden",
         "transition-all duration-500 ease-out z-10",
-        "hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-teal/10 hover:border-brand-teal/30 hover:z-20",
+        "hover:-translate-y-1 hover:shadow-xl hover:shadow-brand-teal/5 hover:border-brand-teal/30 hover:z-20",
         className
       )}
     >

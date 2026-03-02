@@ -12,7 +12,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export default function SectorPathways() {
   return (
-    <section className="relative py-16 md:py-24 bg-white overflow-hidden" aria-labelledby="sectors-heading">
+    <section className="relative py-16 md:py-24 bg-[#F7F5F0] overflow-hidden" aria-labelledby="sectors-heading">
       {/* Grid pattern background */}
       <div
         className="absolute inset-0 opacity-[0.03]"
