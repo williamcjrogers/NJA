@@ -36,7 +36,7 @@ export default function ServicesGrid() {
             Our Services
           </h2>
           <p className="text-fluid-base text-brand-charcoal-light max-w-2xl mx-auto">
-            Comprehensive environmental and site works, delivered by directly employed, qualified teams with owned specialist equipment.
+            Comprehensive environmental and site works, coordinated through robust project management and delivered by our highly vetted, trusted supply chain.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

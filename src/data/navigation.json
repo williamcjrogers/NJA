@@ -4,40 +4,92 @@
       "label": "Services",
       "href": "/services",
       "children": [
-        { "label": "Vegetation Management", "href": "/services/vegetation-management" },
-        { "label": "Arboriculture", "href": "/services/arboriculture" },
-        { "label": "Grounds Maintenance", "href": "/services/grounds-maintenance" },
-        { "label": "Watercourse Management", "href": "/services/watercourse-management" },
-        { "label": "Fencing", "href": "/services/fencing" },
-        { "label": "Soft Dig & Reinstatement", "href": "/services/soft-dig" },
-        { "label": "Traffic Management", "href": "/services/traffic-management" },
-        { "label": "Emergency Response", "href": "/services/emergency-response" }
+        {
+          "label": "Vegetation Management",
+          "href": "/services/vegetation-management"
+        },
+        {
+          "label": "Arboriculture",
+          "href": "/services/arboriculture"
+        },
+        {
+          "label": "Grounds Maintenance",
+          "href": "/services/grounds-maintenance"
+        },
+        {
+          "label": "Watercourse Management",
+          "href": "/services/watercourse-management"
+        },
+        {
+          "label": "Fencing",
+          "href": "/services/fencing"
+        },
+        {
+          "label": "Soft Dig & Reinstatement",
+          "href": "/services/soft-dig"
+        },
+        {
+          "label": "Traffic Management",
+          "href": "/services/traffic-management"
+        },
+        {
+          "label": "Emergency Response",
+          "href": "/services/emergency-response"
+        }
       ]
     },
     {
       "label": "Sectors",
       "href": "/sectors",
       "children": [
-        { "label": "Water Utilities", "href": "/sectors/water-utilities" },
-        { "label": "Energy & Telecoms", "href": "/sectors/energy-telecoms" },
-        { "label": "Local Authorities", "href": "/sectors/local-authorities" },
-        { "label": "Housing Associations", "href": "/sectors/housing-associations" },
-        { "label": "Tier 1 Contractors", "href": "/sectors/tier-1-contractors" }
+        {
+          "label": "Water Utilities",
+          "href": "/sectors/water-utilities"
+        },
+        {
+          "label": "Energy & Telecoms",
+          "href": "/sectors/energy-telecoms"
+        },
+        {
+          "label": "Local Authorities",
+          "href": "/sectors/local-authorities"
+        },
+        {
+          "label": "Housing Associations",
+          "href": "/sectors/housing-associations"
+        },
+        {
+          "label": "Tier 1 Contractors",
+          "href": "/sectors/tier-1-contractors"
+        }
       ]
     },
-    { "label": "Case Studies", "href": "/case-studies" },
     {
       "label": "About",
       "href": "/about",
       "children": [
-        { "label": "Our Story", "href": "/about" },
-        { "label": "Meet the Team", "href": "/about/team" },
-        { "label": "Fleet & Equipment", "href": "/about/fleet" }
+        {
+          "label": "Our Story",
+          "href": "/about"
+        },
+        {
+          "label": "Meet the Team",
+          "href": "/about/team"
+        }
       ]
     },
-    { "label": "Accreditations", "href": "/accreditations" },
-    { "label": "Work With Us", "href": "/work-with-us" },
-    { "label": "News", "href": "/news" }
+    {
+      "label": "Accreditations",
+      "href": "/accreditations"
+    },
+    {
+      "label": "Work With Us",
+      "href": "/work-with-us"
+    },
+    {
+      "label": "News",
+      "href": "/news"
+    }
   ],
   "emergency": {
     "label": "24/7 Emergency",
