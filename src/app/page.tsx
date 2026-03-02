@@ -19,7 +19,7 @@ export default function HomePage() {
       <SectionDivider variant="wave" fillColor="var(--color-brand-white)" />
       <AccreditationBar />
       <SectionDivider variant="curve" fillColor="var(--color-brand-cream)" />
-      <ServicesGrid />
+      <ServicesGrid compact />
       <SectionDivider variant="angle" fillColor="var(--color-brand-charcoal)" />
       <StatsBar />
       <SectionDivider variant="wave" fillColor="var(--color-brand-white)" flip />

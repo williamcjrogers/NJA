@@ -4,14 +4,67 @@ import { cn } from "@/lib/utils";
 
 interface CardProps {
   title: string;
-  description: string;
+  description?: string;
   href: string;
   icon?: React.ReactNode;
   tag?: string;
   className?: string;
+  compact?: boolean;
 }
 
-export default function Card({ title, description, href, icon, tag, className }: CardProps) {
+export default function Card({ title, description, href, icon, tag, className, compact = false }: CardProps) {
+  if (compact) {
+    return (
+      <Link
+        href={href}
+        className={cn(
+          "group relative flex flex-col items-center justify-center text-center bg-white rounded-xl border border-transparent p-6 h-64 overflow-hidden shadow-sm",
+          "transition-all duration-500 ease-out z-10",
+          "hover:-translate-y-2 hover:shadow-2xl hover:shadow-brand-teal/15 hover:border-brand-teal/30 hover:z-20",
+          className
+        )}
+      >
+        <div
+          className="absolute inset-0 bg-gradient-to-t from-brand-teal/[0.04] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out -z-10"
+          aria-hidden="true"
+        />
+
+        {/* Background Icon Watermark */}
+        {icon && (
+          <div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-brand-teal opacity-0 group-hover:opacity-[0.04] transition-all duration-700 ease-in-out group-hover:scale-[6] -z-10"
+            aria-hidden="true"
+          >
+            {icon}
+          </div>
+        )}
+
+        <div className="transform transition-transform duration-500 ease-out group-hover:-translate-y-4 flex flex-col items-center">
+          {icon && (
+            <div
+              className="mb-5 w-16 h-16 rounded-2xl bg-brand-cream flex items-center justify-center text-brand-charcoal transition-all duration-500 ease-out group-hover:scale-110 group-hover:bg-brand-teal group-hover:text-white group-hover:shadow-lg group-hover:shadow-brand-teal/30"
+              aria-hidden="true"
+            >
+              {icon}
+            </div>
+          )}
+
+          <h3 className="text-xl font-bold text-brand-charcoal group-hover:text-brand-teal transition-colors duration-300">
+            {title}
+          </h3>
+        </div>
+
+        {/* Learn More - sliding up */}
+        <div className="absolute bottom-6 left-0 w-full flex justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-out delay-100">
+          <span className="inline-flex items-center gap-2 text-sm font-bold text-brand-amber">
+            Explore Service
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          </span>
+        </div>
+      </Link>
+    );
+  }
+
   return (
     <Link
       href={href}

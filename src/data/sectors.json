@@ -10,8 +10,19 @@
       "Responding rapidly to storm damage and flooding incidents",
       "Finding contractors qualified to work safely in and around water"
     ],
-    "relevantAccreditations": ["cscs", "smsts", "water-safety", "pa1-pa6", "first-aid"],
-    "relevantServices": ["vegetation-management", "watercourse-management", "emergency-response", "grounds-maintenance"]
+    "relevantAccreditations": [
+      "cscs",
+      "smsts",
+      "water-safety",
+      "pa1-pa6",
+      "first-aid"
+    ],
+    "relevantServices": [
+      "vegetation-management",
+      "watercourse-management",
+      "emergency-response",
+      "grounds-maintenance"
+    ]
   },
   {
     "slug": "energy-telecoms",
@@ -24,8 +35,19 @@
       "Balancing planned maintenance programmes with reactive emergency call-outs",
       "Traffic management requirements for roadside and highway network assets"
     ],
-    "relevantAccreditations": ["cscs", "smsts", "sssts", "nrswa", "chainsaw"],
-    "relevantServices": ["vegetation-management", "arboriculture", "traffic-management", "emergency-response"]
+    "relevantAccreditations": [
+      "cscs",
+      "smsts",
+      "sssts",
+      "nrswa",
+      "chainsaw"
+    ],
+    "relevantServices": [
+      "vegetation-management",
+      "arboriculture",
+      "traffic-management",
+      "emergency-response"
+    ]
   },
   {
     "slug": "local-authorities",
@@ -38,8 +60,20 @@
       "Ensuring contractor compliance with health, safety, and environmental standards",
       "Responding to emergency and storm incidents affecting public areas"
     ],
-    "relevantAccreditations": ["cscs", "smsts", "pa1-pa6", "constructionline", "chas"],
-    "relevantServices": ["grounds-maintenance", "vegetation-management", "arboriculture", "fencing", "emergency-response"]
+    "relevantAccreditations": [
+      "cscs",
+      "smsts",
+      "pa1-pa6",
+      "constructionline",
+      "chas"
+    ],
+    "relevantServices": [
+      "grounds-maintenance",
+      "vegetation-management",
+      "arboriculture",
+      "fencing",
+      "emergency-response"
+    ]
   },
   {
     "slug": "housing-associations",
@@ -52,21 +86,43 @@
       "Ensuring contractors are qualified and DBS-checked for residential environments",
       "Balancing planned maintenance with reactive requests"
     ],
-    "relevantAccreditations": ["cscs", "first-aid", "pa1-pa6", "chas"],
-    "relevantServices": ["grounds-maintenance", "vegetation-management", "fencing", "arboriculture"]
+    "relevantAccreditations": [
+      "cscs",
+      "first-aid",
+      "pa1-pa6",
+      "chas"
+    ],
+    "relevantServices": [
+      "grounds-maintenance",
+      "vegetation-management",
+      "fencing",
+      "arboriculture"
+    ]
   },
   {
     "slug": "tier-1-contractors",
     "title": "Tier 1 Contractors",
     "icon": "HardHat",
-    "description": "Specialist sub-contractor for vegetation clearance, site preparation, soft dig, and reinstatement on major infrastructure programmes. Self-delivery model with directly employed, qualified teams.",
+    "description": "Specialist sub-contractor for vegetation clearance, site preparation, soft dig, and reinstatement on major infrastructure programmes. Managed delivery model with a highly vetted, qualified supply chain.",
     "painPoints": [
       "Finding specialist sub-contractors who hold the right qualifications",
       "Supply chain reliability and ability to scale with programme demands",
       "SSSTS, SMSTS, and CSCS compliance across all operatives",
       "Need for self-delivered capability rather than further sub-contracting"
     ],
-    "relevantAccreditations": ["cscs", "smsts", "sssts", "nrswa", "constructionline"],
-    "relevantServices": ["vegetation-management", "soft-dig", "traffic-management", "fencing", "arboriculture"]
+    "relevantAccreditations": [
+      "cscs",
+      "smsts",
+      "sssts",
+      "nrswa",
+      "constructionline"
+    ],
+    "relevantServices": [
+      "vegetation-management",
+      "soft-dig",
+      "traffic-management",
+      "fencing",
+      "arboriculture"
+    ]
   }
 ]

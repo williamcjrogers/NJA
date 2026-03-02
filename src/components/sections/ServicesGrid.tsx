@@ -13,7 +13,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Siren,
 };
 
-export default function ServicesGrid() {
+export default function ServicesGrid({ compact = false }: { compact?: boolean }) {
   return (
     <section className="relative py-16 md:py-24 bg-brand-cream overflow-hidden" aria-labelledby="services-heading">
       {/* Dot pattern background */}
@@ -45,10 +45,11 @@ export default function ServicesGrid() {
             return (
               <div key={service.slug} data-reveal="fade-up" data-reveal-delay={index + 1}>
                 <Card
-                  title={service.shortTitle}
-                  description={service.description}
+                  title={compact ? service.shortTitle : service.title}
+                  description={compact ? undefined : service.description}
                   href={`/services/${service.slug}`}
-                  icon={IconComponent ? <IconComponent className="h-6 w-6" /> : null}
+                  icon={IconComponent ? <IconComponent className={compact ? "h-8 w-8" : "h-6 w-6"} /> : null}
+                  compact={compact}
                 />
               </div>
             );

@@ -37,11 +37,16 @@ export default function SectorPathways() {
             Trusted by infrastructure asset owners and principal contractors across the UK&apos;s critical sectors.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
           {sectors.map((sector, index) => {
             const IconComponent = iconMap[sector.icon];
             return (
-              <div key={sector.slug} data-reveal="fade-up" data-reveal-delay={index + 1}>
+              <div
+                key={sector.slug}
+                data-reveal="fade-up"
+                data-reveal-delay={index + 1}
+                className="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
+              >
                 <Card
                   title={sector.title}
                   description={sector.description}
