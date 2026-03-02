@@ -14,7 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/about/team",
     "/about/fleet",
-    "/accreditations",
     "/work-with-us",
     "/news",
     "/contact",

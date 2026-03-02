@@ -1,6 +1,5 @@
 import Hero from "@/components/sections/Hero";
 import CTASection from "@/components/sections/CTASection";
-import AccreditationBar from "@/components/layout/AccreditationBar";
 import { createMetadata } from "@/lib/metadata";
 import { CheckCircle, Download, Phone } from "lucide-react";
 import Button from "@/components/ui/Button";
@@ -22,7 +21,6 @@ export default function WorkWithUsPage() {
         primaryCta={{ label: "Discuss Your Requirements", href: "/contact" }}
         size="md"
       />
-      <AccreditationBar />
 
       {/* Why Choose NJE */}
       <section className="py-16 md:py-24 bg-brand-cream">
@@ -76,7 +74,7 @@ export default function WorkWithUsPage() {
             Capability Statement
           </h2>
           <p className="text-brand-charcoal-light max-w-2xl mx-auto mb-8">
-            Download our capability statement for a concise overview of our services, accreditations, equipment, and geographic coverage. No form required — it&apos;s yours immediately.
+            Download our capability statement for a concise overview of our services, equipment, and geographic coverage. No form required — it&apos;s yours immediately.
           </p>
           <Button href="/documents/capability-statement.pdf" variant="primary" size="lg">
             <Download className="h-5 w-5" aria-hidden="true" />

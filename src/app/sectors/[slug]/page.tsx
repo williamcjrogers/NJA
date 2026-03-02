@@ -3,11 +3,9 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import Hero from "@/components/sections/Hero";
 import CTASection from "@/components/sections/CTASection";
-import AccreditationBar from "@/components/layout/AccreditationBar";
 import { createMetadata } from "@/lib/metadata";
 import sectors from "@/data/sectors.json";
 import services from "@/data/services.json";
-import accreditations from "@/data/accreditations.json";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -38,9 +36,6 @@ export default async function SectorPage({ params }: Props) {
   const relevantServices = services.filter((s) =>
     sector.relevantServices.includes(s.slug)
   );
-  const relevantAccreditations = accreditations.filter((a) =>
-    sector.relevantAccreditations.includes(a.id)
-  );
 
   return (
     <>
@@ -52,7 +47,6 @@ export default async function SectorPage({ params }: Props) {
         secondaryCta={{ label: "View All Sectors", href: "/sectors" }}
         size="md"
       />
-      <AccreditationBar />
 
       {/* Pain Points */}
       <section className="py-16 md:py-24 bg-brand-cream">
@@ -101,34 +95,6 @@ export default async function SectorPage({ params }: Props) {
           </div>
         </div>
       </section>
-
-      {/* Relevant Accreditations */}
-      <section className="py-16 md:py-24 bg-brand-cream">
-        <div className="mx-auto max-w-7xl px-4">
-          <h2 className="text-fluid-3xl font-bold text-brand-charcoal mb-8">
-            Relevant Accreditations & Qualifications
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {relevantAccreditations.map((acc) => (
-              <div
-                key={acc.id}
-                className="bg-white rounded-xl p-6 border border-brand-grey"
-              >
-                <span className="inline-block px-3 py-1 bg-brand-teal text-white text-xs font-bold rounded mb-3">
-                  {acc.name}
-                </span>
-                <h3 className="text-base font-bold text-brand-charcoal mb-2">
-                  {acc.fullName}
-                </h3>
-                <p className="text-sm text-brand-charcoal-light">
-                  {acc.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <CTASection />
     </>
   );
