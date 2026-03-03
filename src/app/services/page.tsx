@@ -13,9 +13,9 @@ export default function ServicesPage() {
   return (
     <>
       <Hero
-        subtitle="Our Services"
-        title="Comprehensive Environmental & Site Works"
-        description="From planned maintenance programmes to emergency response, we deliver the full scope of environmental and site works for infrastructure asset owners."
+        subtitle="Core Capabilities"
+        title="Executing Complex Environmental Works"
+        description="From rigorous multi-site maintenance programmes to dynamic 24/7 emergency response. We deliver uncompromising standards for the UK's most demanding asset owners."
         size="md"
       />
       <ServicesGrid />

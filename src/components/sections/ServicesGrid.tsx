@@ -40,19 +40,21 @@ export default function ServicesGrid({ compact = false }: { compact?: boolean })
 
       {/* Pull content up into the SectionDivider's solid color space to eliminate deadspace */}
       <div className="relative z-10 mx-auto max-w-7xl px-4">
-        <div className="text-center mb-12" data-reveal="fade-up">
+        <div className="text-center mb-16" data-reveal="fade-up">
           {/* Accent line */}
-          <div className="flex justify-center mb-4" aria-hidden="true">
-            <div className="w-12 h-1 rounded-full bg-gradient-to-r from-brand-teal to-brand-amber" />
+          <div className="flex justify-center mb-6" aria-hidden="true">
+            <div className="w-16 h-1 rounded-full bg-gradient-to-r from-brand-teal to-brand-amber" />
           </div>
-          <h2 id="services-heading" className="text-fluid-3xl font-bold text-brand-charcoal mb-4">
-            Our Services
+          <h2 id="services-heading" className="text-fluid-3xl font-bold text-brand-charcoal mb-6">
+            Core Capabilities
           </h2>
-          <p className="text-fluid-base text-brand-charcoal-light max-w-2xl mx-auto">
-            Comprehensive environmental and site works, coordinated through robust project management and delivered by our highly vetted, trusted supply chain.
+          <p className="text-fluid-lg text-brand-charcoal-light max-w-3xl mx-auto leading-relaxed">
+            Delivering self-executed environmental and site works for critical infrastructure. We deploy our own highly qualified personnel and specialist machinery to guarantee absolute compliance, safety, and operational excellence.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        {/* Changed grid to max 2 columns for a more spacious, premium feel (or 3-4 if compact, but assuming standard here) */}
+        <div className={compact ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6" : "grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10"}>
           {services.map((service, index) => {
             const IconComponent = iconMap[service.icon];
             return (
@@ -61,9 +63,10 @@ export default function ServicesGrid({ compact = false }: { compact?: boolean })
                   title={compact ? service.shortTitle : service.title}
                   description={compact ? undefined : service.description}
                   href={`/services/${service.slug}`}
-                  icon={IconComponent ? <IconComponent className={compact ? "h-8 w-8" : "h-6 w-6"} /> : null}
+                  icon={IconComponent ? <IconComponent className={compact ? "h-8 w-8" : "h-7 w-7"} /> : null}
                   compact={compact}
                   index={index}
+                  className={compact ? "" : "h-full py-8"} // Extra padding for the spacious 2-col layout
                 />
               </div>
             );

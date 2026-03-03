@@ -4,7 +4,7 @@
     "title": "Vegetation Management & Clearance",
     "shortTitle": "Vegetation Management",
     "icon": "Trees",
-    "description": "Managed delivery of large-scale vegetation clearance for infrastructure corridors and operational sites. We coordinate trusted supply chain partners to meet exact programme and reactive requirements.",
+    "description": "Large-scale, precision vegetation clearance for critical infrastructure and operational sites. Delivered efficiently using our in-house specialist machinery and directly employed expert teams.",
     "keywords": [
       "vegetation management contractor UK",
       "vegetation clearance",
@@ -13,10 +13,10 @@
   },
   {
     "slug": "arboriculture",
-    "title": "Arboriculture",
+    "title": "Specialist Arboriculture",
     "shortTitle": "Arboriculture",
     "icon": "TreeDeciduous",
-    "description": "Expert management of specialist tree works, from felling to sectional dismantling. We oversee NPTC-qualified partners, ensuring strict compliance in live environments with full traffic management integration.",
+    "description": "Complex tree surgeries, from high-risk felling to sectional dismantling in live environments. Executed flawlessly by NPTC-qualified arborists with integrated traffic management.",
     "keywords": [
       "arboriculture contractor",
       "tree surgery contractor UK",
@@ -25,10 +25,10 @@
   },
   {
     "slug": "grounds-maintenance",
-    "title": "Grounds Maintenance",
+    "title": "Commercial Grounds Maintenance",
     "shortTitle": "Grounds Maintenance",
     "icon": "Landmark",
-    "description": "Oversight of estate-wide planned grounds maintenance programmes. We ensure our supply chain deploys correctly specified equipment and adheres to rigorous service level agreements for all terrain types.",
+    "description": "Meticulous estate-wide maintenance programmes engineered for large-scale operations. Ensuring visual excellence and rigorous compliance across diverse commercial terrains.",
     "keywords": [
       "grounds maintenance contractor",
       "estate grounds maintenance",
@@ -37,10 +37,10 @@
   },
   {
     "slug": "watercourse-management",
-    "title": "Watercourse & Drainage Management",
+    "title": "Watercourse & Drainage Strategy",
     "shortTitle": "Watercourse Management",
     "icon": "Waves",
-    "description": "Regulated oversight of watercourse and drainage clearance. We guarantee that all deployed teams are fully vetted for Working Safely in Water Level 2 and possess PA1/PA6 herbicide compliance.",
+    "description": "Regulated clearance and maintenance of vital water networks. Deployed teams are vetted for Working Safely in Water Level 2, ensuring environmental integrity and flow.",
     "keywords": [
       "watercourse vegetation management",
       "drainage clearance contractor",
@@ -49,10 +49,10 @@
   },
   {
     "slug": "fencing",
-    "title": "Fencing Installation & Repair",
+    "title": "Security & Boundary Fencing",
     "shortTitle": "Fencing",
     "icon": "Fence",
-    "description": "End-to-end project management for security, boundary, and stock fencing installations. Providing rapid, systematically managed responses for reactive storm and incident repairs.",
+    "description": "Robust end-to-end installation for high-security, boundary, and agricultural perimeters. Engineered for durability with rapid, systematised deployment for reactive repairs.",
     "keywords": [
       "commercial fencing contractor",
       "security fencing installation",
@@ -61,14 +61,15 @@
   },
   {
     "slug": "soft-dig",
-    "title": "Soft Dig, Backfill & Reinstatement",
+    "title": "Soft Dig & Precision Excavation",
     "shortTitle": "Soft Dig & Reinstatement",
     "icon": "Shovel",
-    "description": "Supervision of non-mechanical excavation and surface reinstatement works. We ensure our specialist partners operate with extreme care around buried services and highly sensitive environments.",
+    "description": "Zero-strike, non-mechanical excavation and meticulous surface reinstatement. Operating with clinical precision around high-voltage buried assets and highly sensitive zones.",
     "keywords": [
       "soft dig contractor",
       "backfill and reinstatement",
-      "utility reinstatement contractor"
+      "utility reinstatement contractor",
+      "vacuum excavation contractor"
     ]
   },
   {
@@ -76,7 +77,7 @@
     "title": "NRSWA Traffic Management",
     "shortTitle": "Traffic Management",
     "icon": "TrafficCone",
-    "description": "Integrated delivery of NRSWA-compliant traffic management. We coordinate Chapter 8-equipped vehicles and operatives to guarantee compliant, safe working zones for your site activities.",
+    "description": "Authoritative delivery of NRSWA-compliant traffic systems. Coordinating Chapter 8 deployments to create impenetrable, compliant safe working zones for complex highway operations.",
     "keywords": [
       "NRSWA traffic management contractor",
       "Chapter 8 traffic management",
@@ -85,10 +86,10 @@
   },
   {
     "slug": "emergency-response",
-    "title": "Emergency & Reactive Response",
+    "title": "24/7 Critical Emergency Response",
     "shortTitle": "Emergency Response",
     "icon": "Siren",
-    "description": "24/7 managed response coordination for critical incidents like fallen trees and blocked watercourses. Rapid, continuous mobilisation of our vetted supply chain network and equipment.",
+    "description": "Relentless, 24/7 managed coordination for critical environmental incidents. Rapid mobilisation of our extensive in-house plant and personnel to restore operational flow instantly.",
     "keywords": [
       "emergency tree removal",
       "storm response contractor",
