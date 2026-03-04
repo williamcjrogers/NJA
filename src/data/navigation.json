@@ -82,5 +82,9 @@
     "phone": "+44 7404 380 439",
     "email": "info@nicolasjames.co.uk",
     "href": "tel:+447404380439"
+  },
+  "clientLogin": {
+    "label": "Client Login",
+    "href": "https://operations.nicolasjamesenvironmental.com"
   }
 }

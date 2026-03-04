@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown, Menu, X, Phone } from "lucide-react";
+import { ChevronDown, Menu, X, Phone, User } from "lucide-react";
 import { LogoFull } from "@/components/Logo";
 import navigation from "@/data/navigation.json";
 
@@ -64,6 +64,15 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
+            <a
+              href={navigation.clientLogin?.href || "https://operations.nicolasjamesenvironmental.com"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-brand-charcoal hover:text-brand-teal transition-colors"
+            >
+              <User className="h-4 w-4" aria-hidden="true" />
+              {navigation.clientLogin?.label || "Client Login"}
+            </a>
             <a
               href={navigation.contact.href}
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-teal text-white text-sm font-semibold rounded-lg hover:bg-brand-teal-light transition-colors"
@@ -148,6 +157,15 @@ export default function Header() {
               </div>
             ))}
             <div className="pt-4 border-t border-brand-grey">
+              <a
+                href={navigation.clientLogin?.href || "https://operations.nicolasjamesenvironmental.com"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full px-5 py-3 mb-2 border border-brand-grey text-brand-charcoal text-sm font-semibold rounded-lg hover:bg-brand-charcoal/5 transition-colors"
+              >
+                <User className="h-4 w-4" aria-hidden="true" />
+                {navigation.clientLogin?.label || "Client Login"}
+              </a>
               <a
                 href={navigation.contact.href}
                 className="flex items-center justify-center gap-2 w-full px-5 py-3 bg-brand-teal text-white text-sm font-semibold rounded-lg"
